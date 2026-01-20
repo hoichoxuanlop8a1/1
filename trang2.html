@@ -5,20 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hội chợ xuân – Menu món ăn</title>
 
-
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       min-height: 100vh;
-
       background-image: url("images/tet-bg-mobile.png");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
     }
 
-   
     @media (max-width: 768px) {
       body {
         background-position: top center;
@@ -88,23 +85,39 @@
       color: #c62828;
       font-weight: bold;
     }
-    .fb-float {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: #1877f2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 20px rgba(0,0,0,.3);
-  z-index: 9999;
-}
-.fb-float img {
-  width: 30px;
-}
+
+    /* ===== NÚT NỔI FACEBOOK + ZALO ===== */
+    .social-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 9999;
+    }
+
+    .social-float a {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .social-float img {
+      width: 30px;
+    }
+
+    .fb-btn {
+      background: #1877f2;
+    }
+
+    .zalo-btn {
+      background: #0068ff;
+    }
   </style>
 </head>
 
@@ -129,31 +142,8 @@
         </div>
       </div>
 
+      <!-- Các món khác -->
       <div class="card">
-        <img src="images/3.jpg">
-        <div class="text">
-          <h3>Text</h3>
-          <p>Text.</p>
-        </div>
-      </div>
-
-<div class="card">
-        <img src="images/3.jpg">
-        <div class="text">
-          <h3>Text</h3>
-          <p>Text.</p>
-        </div>
-      </div>
-
-<div class="card">
-        <img src="images/3.jpg">
-        <div class="text">
-          <h3>Text</h3>
-          <p>Text.</p>
-        </div>
-      </div>
-
-<div class="card">
         <img src="images/3.jpg">
         <div class="text">
           <h3>Text</h3>
@@ -169,15 +159,7 @@
         </div>
       </div>
 
-<div class="card">
-        <img src="images/3.jpg">
-        <div class="text">
-          <h3>Text</h3>
-          <p>Text.</p>
-        </div>
-      </div>
-
-<div class="card">
+      <div class="card">
         <img src="images/3.jpg">
         <div class="text">
           <h3>Text</h3>
@@ -192,42 +174,25 @@
           <p>Text.</p>
         </div>
       </div>
-
-<div class="card">
-        <img src="images/3.jpg">
-        <div class="text">
-          <h3>Text</h3>
-          <p>Text.</p>
-        </div>
-      </div>
-
-<div class="card">
-        <img src="images/3.jpg">
-        <div class="text">
-          <h3>Text</h3>
-          <p>Text.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="images/3.jpg">
-        <div class="text">
-          <h3>Text</h3>
-          <p>Text.</p>
-        </div>
-      </div>
-      
     </div>
 
     <div class="back">
       <a href="index.html">⬅ Quay về trang chủ</a>
     </div>
   </div>
-  <a href="https://www.facebook.com/USERNAME"
-   target="_blank"
-   class="fb-float">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg">
-</a>
+
+  <!-- NÚT NỔI LIÊN HỆ -->
+  <div class="social-float">
+    <!-- Facebook cá nhân -->
+    <a href="https://www.facebook.com/USERNAME" target="_blank" class="fb-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg">
+    </a>
+
+    <!-- Zalo -->
+    <a href="https://zalo.me/SDT" target="_blank" class="zalo-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg">
+    </a>
+  </div>
 
 </body>
 </html>
