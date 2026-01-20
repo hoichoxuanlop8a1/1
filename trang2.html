@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .desc {
+      padding: 15px;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .back {
+      text-align: center;
+      margin: 30px;
+    }
+
+    .back a {
+      color: #ffd700;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>📷 Menu các món ăn</h1>
+
+<div class="gallery">
+
+  <div class="card">
+    <img src="images/anh1.jpg">
+    <div class="desc">Khoảnh khắc đầu tiên của bộ ảnh.<br>Ghi lại một kỷ niệm rất đáng nhớ.</div>
+  </div>
+
+  <div class="card">
+    <img src="images/anh2.jpg">
+    <div class="desc">Một góc nhìn quen mà lạ.<br>Càng nhìn càng thấy có hồn.</div>
+  </div>
+
+  <div class="card">
+    <img src="images/anh3.jpg">
+    <div class="desc">Ánh sáng và màu sắc hòa vào nhau.<br>Một cảm giác rất chill.</div>
+  </div>
+
+  <!-- CỨ LẶP TỚI 13 ẢNH -->
+  <!-- đổi anh4.jpg ... anh13.jpg và mô tả -->
+
+</div>
+
+<div class="back">
+  <a href="index.html">⬅ Quay về trang chủ</a>
+</div>
+
+</body>
+</html>
